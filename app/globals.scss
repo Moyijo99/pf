@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --foreground-rgb: 0, 0, 0; */
+  /* --background-start-rgb: 214, 219, 220; */
+  /* --background-end-rgb: 255, 255, 255; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+    @apply bg-[#ffffff];
+}
+
+body {
+    @apply overflow-x-hidden font-normal pt-24 md:pt-28;
+}
+
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+    @apply bg-primary;
+}
+
+.App {
+    text-align: left;
+}
+
+section {
+    @apply py-12;
+}
+
+.container {
+    @apply w-[90%] max-w-[1200px] mx-auto;
+}
+
+.btn {
+    @apply bg-primary text-secondary uppercase py-2 rounded-md transition-all border-t-primary w-[150px] sm:w-[170px] md:w-[200px];
+    @apply border-solid border flex gap-4 items-center justify-center text-sm md:text-base;
+
+    &:hover {
+        @apply bg-opacity-0 text-primary border-primary;
+    }
+}
+
+.hero .container .text .btn {
+    @apply px-20 md:px-32 max-w-xs;
+}
+
+.title {
+    @apply uppercase text-lg md:text-xl flex items-center gap-2 mb-3;
+
+    .line {
+        @apply w-7 h-[2px] bg-primary;
+    }
+}

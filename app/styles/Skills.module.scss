@@ -1,0 +1,9 @@
+.skills {
+    .skillsGrid {
+        @apply grid md:grid-cols-3 gap-10 mt-10;
+    }
+}
+
+.icon {
+    @apply w-12 h-12 rounded-md mb-3;
+}

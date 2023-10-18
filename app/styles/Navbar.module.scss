@@ -1,0 +1,60 @@
+.logo {
+    @apply w-[70px];
+}
+
+.nav {
+    @apply shadow-sm bg-[#ffffff] fixed top-0 z-50 w-screen;
+    
+    .container {
+        @apply flex items-center py-3 relative w-[90%] mx-auto;
+
+        nav {
+            @apply flex flex-col sm:flex-row justify-center items-center gap-3 w-full;
+            @media screen and (min-width: 550px) {
+                @apply flex-row justify-between gap-10;
+            }
+            
+            > div {
+                @apply flex items-center gap-5 justify-center w-full;
+                @media screen and (min-width: 550px) {
+                    @apply justify-between;
+                }
+
+                > div {
+                    @apply flex gap-5 items-center
+                }
+            }
+        }
+    }
+}
+
+.navigationItem {
+    @apply uppercase relative text-sm w-max;
+    
+    .line {
+        @apply absolute left-0 bottom-[-8px] h-[1.5px] w-full opacity-0 bg-[#ffffff] md:bg-[#2B2B2B] transition-all;
+    }
+    
+    &:hover {
+        .line {
+            @apply bottom-[-5px] opacity-100;
+        }
+    }
+    
+    .active {
+        @apply bottom-[-5px] opacity-100;
+    }
+
+    a {
+        @apply whitespace-nowrap;
+    }
+}
+    .btn {
+        @apply text-xs sm:text-sm uppercase rounded-md pt-2 pb-[6px] px-5;                
+        @apply border-[1px] border-solid border-[#ffffff] md:border-[#2B2B2B] bg-[#2B2B2B] text-[#ffffff] transition-all;                
+        @apply flex items-center gap-3;
+    
+        &:hover {
+            @apply border-[#2B2B2B] bg-opacity-0 text-[#2B2B2B];                
+        }
+    }

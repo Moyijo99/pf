@@ -1,0 +1,61 @@
+.hero {    
+    .cont {
+        @apply lg:max-w-[80%];  
+
+        .heroTitle {
+            @apply text-3xl sm:text-4xl lg:text-[50px] uppercase leading-tight lg:leading-normal; 
+            @apply flex flex-col gap-1; 
+
+            .little {
+                @apply text-base;
+            }
+        }
+
+        .btnCont {
+            @apply flex gap-3 mt-10 mb-20;
+        }
+
+        .rev {
+            @apply bg-secondary border border-primary text-primary;
+        }
+        
+        .bg {
+            @apply grid opacity-5 absolute top-0 right-0 translate-y-[90%] lg:translate-y-[45%] translate-x-[20%] lg:translate-x-[8%];
+            
+            span {
+                @apply text-7xl lg:text-9xl uppercase;
+            }
+        }
+    }
+    
+    .arrow {
+        @apply translate-x-[100%] translate-y-[100%] hidden lg:block;
+        animation: moveArrow 1s alternate-reverse infinite;
+    }
+}
+
+.socialLinks {
+    @apply flex items-center gap-4 sm:gap-6 mt-5;
+
+    .socialLink {
+        @apply p-[10px] md:p-3 rounded-md bg-primary bg-opacity-5 transition;
+
+        .icon {
+            @apply w-5 sm:w-6 h-5 sm:h-6 text-primary;
+        }
+
+        &:hover {
+            @apply shadow-md -translate-y-[3px];
+        }
+    }
+}
+
+@keyframes moveArrow {
+    from {
+        transform: translateY(80%) translateX(60%) scale(1.2);
+    }
+    
+    to {
+        transform: translateY(0) translateX(60%) scale(1.2);
+    }
+}
