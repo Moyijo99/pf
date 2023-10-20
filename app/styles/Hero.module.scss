@@ -1,7 +1,6 @@
 .hero {    
     .cont {
         @apply lg:max-w-[80%];  
-        @apply -mt-8 lg:-mt-0;
 
         .heroTitle {
             @apply text-3xl sm:text-4xl lg:text-[50px] uppercase leading-tight lg:leading-normal; 
