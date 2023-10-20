@@ -5,6 +5,7 @@ import project1Image from "./assets/Screenshot 2023-10-09 105717.png"
 import project2Image from "./assets/bd.png"
 import project3Image from "./assets/form.png"
 import project4Image from "./assets/url.jpg"
+import project5Image from "./assets/portfolio.png"
 
 export const skills = [
     {
@@ -37,7 +38,7 @@ export const projects = [
     {
         tag: "Front-end",
         title: "Bearded Dare",
-        text: "Showcasing e-commerce project-products, sales, about, contact, checkout. Demonstrates web development skills.",
+        text: "Showcasing e-commerce project-products, sales, about, contact, checkout. Demonstrates web development skills. (In-developement)",
         image: project2Image,
         techs: ["nextJs", "TypeScript", "JavaScript", "Sass", "Tailwind"],
         codeLink: "https://github.com/Aheedjo/bearded-dare",
@@ -60,6 +61,15 @@ export const projects = [
         techs: ["CSS", "HTML", "JavaScript"],
         codeLink: "https://github.com/Aheedjo/url-shortening-api-master",
         liveLink: "https://fascinating-cheesecake-452b26.netlify.app/"
+    },
+    {
+        tag: "Front-end",
+        title: "Portfolio website",
+        text: "Explore my portfolio for a glimpse into web innovation. Elevate your digital presence with sleek designs and seamless experiences. 🌐",
+        image: project5Image,
+        techs: ["NextJs", "Tailwind", "EmailJs", "ReactJs", "Sass"],
+        codeLink: "https://github.com/Aheedjo/adm",
+        liveLink: "https://adms-portfolio.vercel.app/"
     },
     {
         tag: "Back-end  ||  API",
