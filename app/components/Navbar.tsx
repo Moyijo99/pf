@@ -24,7 +24,7 @@ function Navbar() {
                         </div>
                         <div>
                             <div className={NavBarStyles.navigationItem}>
-                                <a href="../assets/MaishanuResume.pdf" download="MaishanuResume.pdf">Download r&Eacute;sum&Eacute;</a>
+                                <a href="https://drive.google.com/uc?export=download&id=1-Vq-OTK3z7vHUvZyjZZDoDYedB8BPlTl" download="MaishanuResume.pdf">Download r&Eacute;sum&Eacute;</a>
                                 <span className={NavBarStyles.line}></span>
                             </div>
                             <Link href="/contact">
