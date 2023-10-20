@@ -23,8 +23,8 @@ const ContactPage = () => {
 
     return (
         <>
-            <div className='container my-5'>
-                <h1 className='text-3xl text-center uppercase'>Contact Me</h1>
+            <div className="container my-5">
+                <h1 className="text-3xl text-center uppercase">Contact Me</h1>
                 <p className={`${ContactStyles.statusMessage} text-center`}>{statusMessage}</p>            
             </div>
             <section className={`${ContactStyles.contact} container`}>

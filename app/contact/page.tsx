@@ -43,7 +43,7 @@ const ContactPage = () => {
                                     />
                                     {
                                         errors.fullName && errors.fullName.type === "required" && (
-                                            <span className={ContactStyles.errorMsg}>Field can't be empty</span>
+                                            <span className={ContactStyles.errorMsg}>Field can&apos;t be empty</span>
                                         )
                                     }
                                 </div>
@@ -58,7 +58,7 @@ const ContactPage = () => {
                                     />
                                     {
                                         errors.email && errors.email.type === "required" && (
-                                            <span className={ContactStyles.errorMsg}>Field can't be empty</span>
+                                            <span className={ContactStyles.errorMsg}>Field can&apos;t be empty</span>
                                         )
                                     }
                                 </div>
@@ -74,7 +74,7 @@ const ContactPage = () => {
                                     />
                                     {
                                         errors.phoneNumber && errors.phoneNumber.type === "required" && (
-                                            <span className={ContactStyles.errorMsg}>Field can't be empty</span>
+                                            <span className={ContactStyles.errorMsg}>Field can&apos;t be empty</span>
                                         )
                                     }
                                 </div>
@@ -100,7 +100,7 @@ const ContactPage = () => {
                                 />
                                 {
                                     errors.message && errors.message.type === "required" && (
-                                        <span className={ContactStyles.errorMsg}>Field can't be empty</span>
+                                        <span className={ContactStyles.errorMsg}>Field can&apos;t be empty</span>
                                     )
                                 }
                             </div>
