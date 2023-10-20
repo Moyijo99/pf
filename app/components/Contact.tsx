@@ -13,7 +13,7 @@ const ContactPage = () => {
     const onSubmit = () => {
         emailjs.sendForm('service_8qgli29', 'template_o8veyrt', '.form', '1qjUF6DjZjE5gJPhV')
             .then((result: any) => {
-                setStatusMessage("Message sent successfully, and I'll make sure to get back to you within 24 hours.");
+                setStatusMessage("Message sent successfully, and I&apos;ll make sure to get back to you within 24 hours.");
                 console.log(result.text);
             }, (error: any) => {
                 console.log(error.text);
