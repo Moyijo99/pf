@@ -11,7 +11,7 @@ export default function Home() {
         <Hero />
         <Skills />
         <WebTechs />
-        <Projects />
+        <Projects id="projects" />
         <About />
         <CTA />
     </>

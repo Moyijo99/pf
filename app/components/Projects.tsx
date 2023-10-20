@@ -2,9 +2,9 @@ import { projects } from "../data"
 import Image from 'next/image';
 import projectsStyles from "../styles/Projects.module.scss"
 
-const Projects = () => {        
+const Projects = ({ id }: { id: string }) => {        
     return (
-        <section className={`${projectsStyles.projects} container`}>
+        <section className={`${projectsStyles.projects} container`} id={id}>
             <h2 className="title"><span className="line"></span>Projects</h2>
             <div className={ projectsStyles.projectsGrid }>
                 {
