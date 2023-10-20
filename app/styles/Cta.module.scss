@@ -1,0 +1,11 @@
+.cta {
+    @apply my-20 py-10 border-y border-solid border-primary;
+    @apply flex flex-col md:flex-row justify-between md:items-center gap-5 uppercase;
+    
+    .text {
+        @apply text-3xl md:text-[40px] max-w-2xl mb-3;
+        @media screen and (max-width: 425px) {
+            @apply text-2xl;
+        }
+    }
+}

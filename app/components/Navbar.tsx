@@ -18,16 +18,16 @@ function Navbar() {
                             className={NavBarStyles.logo}
                     /></Link>
                     <div>
-                        <div className={NavBarStyles.navigationitem}>
+                        <div className={NavBarStyles.navigationItem}>
                             <Link href="/">Home</Link>
                             <span className={NavBarStyles.line}></span>
                         </div>
                         <div>
                             <div className={NavBarStyles.navigationItem}>
-                                {/* <a href={ resume } download="Maishanu's Resume">Download r&Eacute;sum&Eacute;</a> */}
+                                <a href="../assets/MaishanuResume.pdf" download="MaishanuResume.pdf">Download r&Eacute;sum&Eacute;</a>
                                 <span className={NavBarStyles.line}></span>
                             </div>
-                            <Link href="/contact-me">
+                            <Link href="/contact">
                                 <button className={NavBarStyles.btn}>
                                     Contact me 
                                     <BsFillArrowRightCircleFill className={NavBarStyles.col} />

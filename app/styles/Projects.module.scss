@@ -1,0 +1,57 @@
+.projects {
+    .projectsGrid {
+        @apply mt-5 md:mt-7;
+        @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-5;
+
+        .project {
+            @apply shadow-sm rounded;
+            @apply bg-[url("../assets/repeating-triangles.svg")] bg-cover bg-no-repeat bg-center; 
+
+            .image {
+                @apply rounded-t h-40 w-full object-cover;
+            }
+            
+            .infoCont {
+                @apply p-5;
+
+                .info {
+                    > div {
+                        @apply px-2 pb-[2px] bg-primary w-max mb-3;
+
+                        .tag {
+                            @apply text-xs uppercase text-secondary;
+                        }
+                    }
+
+                    .title {
+                        @apply mb-1 text-lg;
+                    }
+        
+                    .text {
+                        @apply text-sm;
+                    }
+                }
+    
+
+                .techs {
+                    @apply flex items-center gap-2 mt-4 flex-wrap;
+
+                    .tech {
+                        @apply px-2 py-1 bg-primary bg-opacity-5 text-paragraph text-xs;
+                    }
+                }
+    
+                .btnCont {
+                    @apply flex gap-3 mt-6;
+    
+                    a {
+                        @apply text-xs border-solid border-primary border-[1px] p-3 py-1 rounded-sm w-28 text-center transition-all;
+                        &:hover {
+                            @apply bg-primary text-secondary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

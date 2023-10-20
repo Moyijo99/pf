@@ -1,5 +1,3 @@
-"use client";
-import { useState } from 'react';
 import { FaWhatsapp } from "react-icons/fa"
 import { BsTwitter, BsMailbox, BsLinkedin, BsTelephone, BsGithub } from "react-icons/bs"
 import { useForm } from "react-hook-form"
@@ -8,22 +6,22 @@ import ContactStyles from "../styles/Contact.module.scss"
 
 const ContactPage = () => {
     const { register, handleSubmit, formState: {errors}, reset } = useForm();
-    const [statusMessage, setStatusMessage] = useState("Fill in the form below to send me a message")
+    // const [statusMessage, setStatusMessage] = useState("Fill in the form below to send me a message")
 
-    const onSubmit = () => {
-        emailjs.sendForm('service_739q0fs', 'template_o8veyrt', '.form', '1qjUF6DjZjE5gJPhV')
-            .then((result: any) => {
-                setStatusMessage("Message sent successfully, and I'll make sure to get back to you within 24 hours.");
-                console.log(result.text);
-            }, (error: any) => {
-                console.log(error.text);
-            });
-        reset();
-    };
+    // const onSubmit = () => {
+    //     emailjs.sendForm('service_8qgli29', 'template_o8veyrt', '.form', '1qjUF6DjZjE5gJPhV')
+    //         .then((result: any) => {
+    //             setStatusMessage("Message sent successfully, and I'll make sure to get back to you within 24 hours.");
+    //             console.log(result.text);
+    //         }, (error: any) => {
+    //             console.log(error.text);
+    //         });
+    //     reset();
+    // };
 
     return (
         <>
-            <div className='container my-5'>
+            {/* <div className='container my-5'>
                 <h1 className='text-3xl text-center uppercase'>Contact Me</h1>
                 <p className={`${ContactStyles.statusMessage} text-center`}>{statusMessage}</p>            
             </div>
@@ -31,8 +29,8 @@ const ContactPage = () => {
                     <div>
                         <h2 className="title"><span className="line"></span>Get in touch</h2>
 
-                        <form className={`${ContactStyles.form} form`} onSubmit={handleSubmit(onSubmit)}>
-                            <div className={ContactStyles.gridInput}>
+                        <form className="form" onSubmit={handleSubmit(onSubmit)}>
+                            <div className="grid-input">
                                 <div>
                                     <input 
                                         {...register("fullName", {
@@ -63,7 +61,7 @@ const ContactPage = () => {
                                     }
                                 </div>
                             </div>
-                            <div className={ContactStyles.gridInput}>
+                            <div className="grid-input">
                                 <div>
                                     <input 
                                         {...register("phoneNumber", {
@@ -104,11 +102,11 @@ const ContactPage = () => {
                                     )
                                 }
                             </div>
-                            <button type="submit" className="btn mt-5 w-full">Send</button>
+                            <button type="submit" className={ContactStyles.btn}>Send</button>
                         </form>
                     </div>
 
-                    <div className={ContactStyles.right}>
+                    <div className="right">
                         <h2 className="title"><span className="line"></span>Contact Information</h2>
                         <p className="mb-3">Use any of the social media links of your choice below to contact me</p>            
                         <div className={ContactStyles.oneLiner}>
@@ -120,13 +118,13 @@ const ContactPage = () => {
                             <p>+23481 4341 0800</p>
                         </div>
                         <div className={ContactStyles.socialLinks}>
-                            <a className={ContactStyles.socialLink} target="_blank" href="https://www.linkedin.com/in/maishanu-ahidjo-36bb7b1bb/" rel="noreferrer"><BsLinkedin className={ContactStyles.icon} /></a>
-                            <a className={ContactStyles.socialLink} target="_blank" href="https://github.com/Aheedjo" rel="noreferrer"><BsGithub className={ContactStyles.icon} /></a>
-                            <a className={ContactStyles.socialLink} target="_blank" href="https://twitter.com/Ahidjo_DM" rel="noreferrer"><BsTwitter className={ContactStyles.icon} /></a>
-                            <a className={ContactStyles.socialLink} target="_blank" href="https://api.whatsapp.com/send?phone=08143410800" rel="noreferrer"><FaWhatsapp className={ContactStyles.icon} /></a>
+                            <a className={ContactStyles.socialLink} target="_blank" href="https://www.linkedin.com/in/maishanu-ahidjo-36bb7b1bb/" rel="noreferrer"><BsLinkedin className="icon-" /></a>
+                            <a className={ContactStyles.socialLink} target="_blank" href="https://github.com/Aheedjo" rel="noreferrer"><BsGithub className="icon-" /></a>
+                            <a className={ContactStyles.socialLink} target="_blank" href="https://twitter.com/Ahidjo_DM" rel="noreferrer"><BsTwitter className="icon-" /></a>
+                            <a className={ContactStyles.socialLink} target="_blank" href="https://api.whatsapp.com/send?phone=08143410800" rel="noreferrer"><FaWhatsapp className="icon-" /></a>
                         </div>
                     </div>
-            </section>
+            </section> */}
         </>
     )
 }

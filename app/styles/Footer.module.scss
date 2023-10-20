@@ -1,0 +1,15 @@
+.footer {
+    @apply bg-primary text-secondary;
+
+    .container {
+        @apply flex sm:flex-row gap-10 justify-between items-center py-6;
+
+        .logo {
+            @apply w-[70px];
+        }
+
+        .copyright {
+            @apply text-sm;
+        }
+    }
+}

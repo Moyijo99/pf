@@ -15,9 +15,10 @@ const config: Config = {
       },
       colors: {
         'primary': '#2B2B2B',
-        'secondary': '#ffffff',
+        'secondary': '#F9F9F9',
         'light_grey': '#BFBFBF',
         'very_light_grey': '#fefefe',
+        'paragraph': '#393E46'
       }
     },
   },

@@ -1,0 +1,56 @@
+.contact {
+    @apply lg:grid gap-20 lg:mb-20;
+    @media screen and (min-width: 768px) {
+        grid-template-columns: 60% 40%;
+    }
+
+    .form {
+        @apply mt-5;
+        
+        input, textarea {
+            @apply bg-secondary border-b p-2 border-primary outline-none w-full;
+        }
+
+        div {
+            .errorMsg {
+                @apply text-sm text-red-700 mt-1 pl-2;
+            }
+        }
+
+        .gridInput {
+            @apply grid grid-cols-1 md:grid-cols-2 gap-5 mb-5;
+        }
+
+        .btn {
+            @apply py-2 md:py-3 mt-5;
+        }
+    }
+    
+    .right {
+        @apply mt-10 lg:mt-0;
+
+        .title {
+            @apply mb-5;
+        }
+
+        .oneLiner {
+            @apply flex items-center gap-3 mb-2;
+        }
+
+        .socialLinks {
+            @apply flex items-center gap-4 sm:gap-6 mt-5;
+        
+            .socialLink {
+                @apply p-[10px] md:p-3 rounded-md bg-primary bg-opacity-5 transition;
+        
+                .icon {
+                    @apply w-5 sm:w-6 h-5 sm:h-6 text-primary;
+                }
+        
+                &:hover {
+                    @apply shadow-md -translate-y-[3px];
+                }
+            }
+        }
+    }
+}   
