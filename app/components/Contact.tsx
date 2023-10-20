@@ -1,3 +1,5 @@
+"use client"
+import { useState } from "react"
 import { FaWhatsapp } from "react-icons/fa"
 import { BsTwitter, BsMailbox, BsLinkedin, BsTelephone, BsGithub } from "react-icons/bs"
 import { useForm } from "react-hook-form"
@@ -6,22 +8,22 @@ import ContactStyles from "../styles/Contact.module.scss"
 
 const ContactPage = () => {
     const { register, handleSubmit, formState: {errors}, reset } = useForm();
-    // const [statusMessage, setStatusMessage] = useState("Fill in the form below to send me a message")
+    const [statusMessage, setStatusMessage] = useState("Fill in the form below to send me a message")
 
-    // const onSubmit = () => {
-    //     emailjs.sendForm('service_8qgli29', 'template_o8veyrt', '.form', '1qjUF6DjZjE5gJPhV')
-    //         .then((result: any) => {
-    //             setStatusMessage("Message sent successfully, and I'll make sure to get back to you within 24 hours.");
-    //             console.log(result.text);
-    //         }, (error: any) => {
-    //             console.log(error.text);
-    //         });
-    //     reset();
-    // };
+    const onSubmit = () => {
+        emailjs.sendForm('service_8qgli29', 'template_o8veyrt', '.form', '1qjUF6DjZjE5gJPhV')
+            .then((result: any) => {
+                setStatusMessage("Message sent successfully, and I'll make sure to get back to you within 24 hours.");
+                console.log(result.text);
+            }, (error: any) => {
+                console.log(error.text);
+            });
+        reset();
+    };
 
     return (
         <>
-            {/* <div className='container my-5'>
+            <div className='container my-5'>
                 <h1 className='text-3xl text-center uppercase'>Contact Me</h1>
                 <p className={`${ContactStyles.statusMessage} text-center`}>{statusMessage}</p>            
             </div>
@@ -41,7 +43,7 @@ const ContactPage = () => {
                                     />
                                     {
                                         errors.fullName && errors.fullName.type === "required" && (
-                                            <span className={ContactStyles.errorMsg}>Field can't be empty</span>
+                                            <span className={ContactStyles.errorMsg}>Field can&apos;t be empty</span>
                                         )
                                     }
                                 </div>
@@ -56,7 +58,7 @@ const ContactPage = () => {
                                     />
                                     {
                                         errors.email && errors.email.type === "required" && (
-                                            <span className={ContactStyles.errorMsg}>Field can't be empty</span>
+                                            <span className={ContactStyles.errorMsg}>Field can&apos;t be empty</span>
                                         )
                                     }
                                 </div>
@@ -72,7 +74,7 @@ const ContactPage = () => {
                                     />
                                     {
                                         errors.phoneNumber && errors.phoneNumber.type === "required" && (
-                                            <span className={ContactStyles.errorMsg}>Field can't be empty</span>
+                                            <span className={ContactStyles.errorMsg}>Field can&apos;t be empty</span>
                                         )
                                     }
                                 </div>
@@ -98,7 +100,7 @@ const ContactPage = () => {
                                 />
                                 {
                                     errors.message && errors.message.type === "required" && (
-                                        <span className={ContactStyles.errorMsg}>Field can't be empty</span>
+                                        <span className={ContactStyles.errorMsg}>Field can&apos;t be empty</span>
                                     )
                                 }
                             </div>
@@ -124,7 +126,7 @@ const ContactPage = () => {
                             <a className={ContactStyles.socialLink} target="_blank" href="https://api.whatsapp.com/send?phone=08143410800" rel="noreferrer"><FaWhatsapp className="icon-" /></a>
                         </div>
                     </div>
-            </section> */}
+            </section>
         </>
     )
 }
