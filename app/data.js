@@ -5,7 +5,7 @@ import project1Image from "./assets/Screenshot 2023-10-09 105717.png"
 import project2Image from "./assets/bd.png"
 import project3Image from "./assets/form.png"
 import project4Image from "./assets/url.jpg"
-import project5Image from "./assets/portfolio.png"
+// import project5Image from "./assets/portfolio.png"
 
 export const skills = [
     {
@@ -62,15 +62,15 @@ export const projects = [
         codeLink: "https://github.com/Aheedjo/url-shortening-api-master",
         liveLink: "https://fascinating-cheesecake-452b26.netlify.app/"
     },
-    {
-        tag: "Front-end",
-        title: "Portfolio website",
-        text: "Explore my portfolio for a glimpse into web innovation. Elevate your digital presence with sleek designs and seamless experiences. 🌐",
-        image: project5Image,
-        techs: ["NextJs", "Tailwind", "EmailJs", "ReactJs", "Sass"],
-        codeLink: "https://github.com/Aheedjo/adm",
-        liveLink: "https://adms-portfolio.vercel.app/"
-    },
+    // {
+    //     tag: "Front-end",
+    //     title: "Portfolio website",
+    //     text: "Explore my portfolio for a glimpse into web innovation. Elevate your digital presence with sleek designs and seamless experiences. 🌐",
+    //     image: project5Image,
+    //     techs: ["NextJs", "Tailwind", "EmailJs", "ReactJs", "Sass"],
+    //     codeLink: "https://github.com/Aheedjo/adm",
+    //     liveLink: "https://adms-portfolio.vercel.app/"
+    // },
     {
         tag: "Back-end  ||  API",
         title: "Task Management API",
@@ -94,5 +94,13 @@ export const projects = [
         image: '',
         techs: ["Figma"],
         designLink: "https://www.figma.com/file/Mw47LTQgFA8PeqCiFoaIYL/App-dev-project?type=design&node-id=0-1&mode=design&t=XzPNcfLynWajP0H3-0",
+    },
+    {
+        tag: "UI/UX",
+        title: "Bearded Dare design",
+        text: "UI/UX design for a Hair brand company, e-commerce project-products, sales, about, contact, checkout. Demonstrates web development skills.",
+        image: '',
+        techs: ["Figma"],
+        designLink: "https://www.figma.com/file/kew5fgxKv6PJWEqBHHo7Mf/Bearded-Dare?type=design&node-id=355-2031&mode=design&t=EDjcROLzxb3uoUeh-0",
     },
 ];

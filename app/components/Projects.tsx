@@ -43,7 +43,7 @@ const Projects = ({ id }: { id: string }) => {
                                         }
                                         {
                                             project.tag == 'UI/UX' ? (
-                                                <a href={ project.liveLink } target="_blank">View Design</a>
+                                                <a href={ project.designLink } target="_blank">View Design</a>
                                             ) : null
                                         }
                                         {
