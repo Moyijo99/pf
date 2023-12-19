@@ -5,7 +5,9 @@ import project1Image from "./assets/Screenshot 2023-10-09 105717.png"
 import project2Image from "./assets/bd.png"
 import project3Image from "./assets/form.png"
 import project4Image from "./assets/url.jpg"
-// import project5Image from "./assets/portfolio.png"
+import alxLogo from "./assets/alx-logo.svg"
+import nnpcLogo from "./assets/NNPC-logo.svg"
+import platrLogo from "./assets/Platr-logo.svg"
 
 export const skills = [
     {
@@ -104,3 +106,38 @@ export const projects = [
         designLink: "https://www.figma.com/file/kew5fgxKv6PJWEqBHHo7Mf/Bearded-Dare?type=design&node-id=355-2031&mode=design&t=EDjcROLzxb3uoUeh-0",
     },
 ];
+
+export const experience = [
+    {
+        title: "Full-Stack Developer",
+        company: "PLATR",
+        logo: platrLogo,
+        employmentType: "Full-time",
+        startDate: "Jun 2022",
+        endDate: "Present",
+        location: "Remote",
+        Description: "Following my exceptional UI/UX design contributions at PLatr, my work ethic and dedication garnered recognition. I seamlessly transitioned into a full-time role, extending beyond design to join the development team. Tasked with frontend responsibilities using Angular and more, I continued my on-the-go learning journey, consistently improving and contributing to the application's development.",
+        techs: ["Teamwork", "Back-End Web Development", "API Development", "Project Management", "Jira", "Front-End Development", "Git", "Node", "MongoDB", "Express", "Figma", "Problem Solving", "Tailwind CSS", "SCSS", "Angular", "HTML", "TyprScript"],
+        linkToProject: "https://platr.ng/",
+        extra: {
+            title: "User Interface Designer",
+            employmentType: "contract",
+            startDate: "Mar 2022",
+            endDate: "Jul 2022",
+            location: "Remote",
+            Description: "At PLatr, my initial engagement as a UI/UX Designer was a dynamic learning experience. Despite no prior expertise, I embraced the challenge, swiftly acquiring proficiency in Figma. Through proactive research and self-motivation, I honed my design skills on-the-go, ensuring robust and trend-aligned interfaces for the project.",
+            techs: ["Figma", "User Experience (UX)", "Wireframing", "Prototyping", "Information Architecture", "Usability Testing", "Responsive Web Design", "Teamwork", "Communication"],
+        }
+    },
+    {
+        title: "Intern",
+        company: "NNPC",
+        logo: nnpcLogo,
+        employmentType: "Internship",
+        startDate: "Jun 2023",
+        endDate: "Present",
+        location: "Federal Capital Territory, Nigeria",
+        Description: "During my internship at NNPC, I leveraged my prior development experience to lead a team and contribute significantly. Innovating in design, I crafted solutions now integral to various company applications. Additionally, I utilized Power Apps to develop user-friendly apps and spearheaded the creation of a centralized hub for the HSE department, enhancing efficiency and information accessibility across NNPC.",
+        techs: ["Requirements Analysis", "Market Analysis", "Market Research", "Competitive Analysis", "Stock Market Analysis", "Business Requirements", "BRDs", "Back-End Web Developement", "Training", "Microsoft power Apps", "Training", "Microsoft Power BI", "SharePoint", "Dataverse", "Front-End Development", "React.js"] ,
+    }
+]

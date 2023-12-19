@@ -1,0 +1,82 @@
+.experienceContainer {
+    .experienceGrid {
+        @apply grid grid-cols-1 gap-8 lg:gap-10;
+
+        .experience {
+            @apply flex flex-col items-start;
+
+            .infoCont {
+                @apply grid grid-cols-[64px_1fr] gap-5;
+
+                .logoXline {
+                    @apply h-full grid grid-rows-[auto_1fr] place-items-center;
+                    
+                    .logo {
+                        @apply w-full h-16 rounded-lg mb-5;
+                    }
+                    
+                    .line {
+                        @apply w-[1px] h-full bg-gray-400;
+                    }
+                    
+                    .extraLine {
+                        @apply h-8;
+                    }
+        
+                    .circle {
+                        @apply w-2 h-2 bg-gray-400 rounded-full mt-10;
+                    }
+                }
+
+                .extraCont {
+                    @apply grid-rows-[22px_8px];
+                }
+
+                .detailsWrapper {
+                    @apply flex flex-col gap-3;
+                    
+                    .details {
+                        @apply flex items-start justify-between;
+                        
+                        div {
+                            @apply flex flex-col gap-1;
+
+                            .title {
+                                @apply font-semibold;
+                            }
+
+                            p {
+                                @apply text-sm;
+                            }
+
+                            .grey {
+                                @apply text-gray-700;
+                            }
+                            
+                        }
+    
+                        a {
+                            @apply text-xs border-solid border-primary border-[1px] p-3 py-1 rounded-sm w-28 text-center transition-all;
+                            &:hover {
+                                @apply bg-primary text-secondary;
+                            }
+                        }
+                    }
+
+                    .description {
+                        @apply text-gray-700;
+                    }
+    
+                    .techs {
+                        @apply flex items-center gap-2 mt-4 flex-wrap;
+    
+                        .tech {
+                            @apply px-2 py-1 bg-primary bg-opacity-5 text-paragraph text-xs;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
