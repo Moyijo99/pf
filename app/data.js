@@ -6,6 +6,7 @@ import project2Image from "./assets/bd.png"
 import project3Image from "./assets/form.png"
 import project4Image from "./assets/url.jpg"
 import alxLogo from "./assets/alx-logo.svg"
+import abuLogo from "./assets/ABU-logo.png"
 import nnpcLogo from "./assets/NNPC-logo.svg"
 import platrLogo from "./assets/Platr-logo.svg"
 
@@ -135,9 +136,33 @@ export const experience = [
         logo: nnpcLogo,
         employmentType: "Internship",
         startDate: "Jun 2023",
-        endDate: "Present",
+        endDate: "Dec 2023",
         location: "Federal Capital Territory, Nigeria",
         Description: "During my internship at NNPC, I leveraged my prior development experience to lead a team and contribute significantly. Innovating in design, I crafted solutions now integral to various company applications. Additionally, I utilized Power Apps to develop user-friendly apps and spearheaded the creation of a centralized hub for the HSE department, enhancing efficiency and information accessibility across NNPC.",
         techs: ["Requirements Analysis", "Market Analysis", "Market Research", "Competitive Analysis", "Stock Market Analysis", "Business Requirements", "BRDs", "Back-End Web Developement", "Training", "Microsoft power Apps", "Training", "Microsoft Power BI", "SharePoint", "Dataverse", "Front-End Development", "React.js"] ,
     }
+]
+
+export const education = [
+    {
+        logo: abuLogo,
+        institution: "Ahmadu Bello University",
+        degree: "Bachelor fo Engineering - BE",
+        field: "Computer Engineering",
+        startDate: "Jan 2018",
+        endDate: "Nov 2024",
+        location: "Zaria, Nigeria",
+        skills: [" Machine Learning", "Embedded Systems", "Networking", " Software Development", "Electrical Engineering", "Control Systems Design"]
+    },
+    {
+        logo: alxLogo,
+        institution: "ALX_Africa",
+        degree: "Bachelor fo Engineering - BE",
+        field: "Computer Engineering",
+        startDate: "Jan 2018",
+        endDate: "Nov 2024",
+        employmentType: "Internship",
+        location: "Zaria, Nigeria",
+        skills: [" Machine Learning", "Embedded Systems", "Networking", " Software Development", "Electrical Engineering", "Control Systems Design"]
+    },
 ]

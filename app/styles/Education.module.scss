@@ -1,0 +1,46 @@
+.educationContainer {
+    .educationGrid {
+        @apply grid grid-cols-1 gap-8 lg:gap-10 mt-5;
+
+        .education {
+            @apply flex flex-col items-start;
+
+            .infoCont {
+                @apply grid grid-cols-[64px_1fr] gap-5;
+
+                .logo {
+                    @apply w-full h-16 rounded-lg mb-5;
+                }
+
+                .detailsWrapper {
+                    @apply flex flex-col gap-3;
+                    
+                    .details {
+                        @apply flex flex-col items-start justify-between;
+                        
+                        .title {
+                            @apply font-semibold text-lg;
+                        }
+
+                        p {
+                            @apply text-sm;
+                        }
+
+                        .grey {
+                            @apply text-gray-700;
+                        }                            
+                    }
+    
+                    .skills {
+                        @apply flex items-center gap-2 mt-4 flex-wrap;
+    
+                        .skill {
+                            @apply px-2 py-1 bg-primary bg-opacity-5 text-paragraph text-xs;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

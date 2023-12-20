@@ -6,6 +6,7 @@ import About from "./components/About"
 import CTA from "./components/CTA"
 import ProffesionalStatement from "./components/ProffessionalStatement"
 import Experience from "./components/Experience"
+import Education from "./components/Education"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <Hero />
         <ProffesionalStatement />
         <Experience />
+        <Education />
         <Skills />
         <WebTechs />
         <Projects id="projects" />
