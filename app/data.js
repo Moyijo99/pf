@@ -152,17 +152,16 @@ export const education = [
         startDate: "Jan 2018",
         endDate: "Nov 2024",
         location: "Zaria, Nigeria",
-        skills: [" Machine Learning", "Embedded Systems", "Networking", " Software Development", "Electrical Engineering", "Control Systems Design"]
+        skills: ["Machine Learning", "Embedded Systems", "Networking", " Software Development", "Electrical Engineering", "Control Systems Design"]
     },
     {
         logo: alxLogo,
         institution: "ALX_Africa",
-        degree: "Bachelor fo Engineering - BE",
-        field: "Computer Engineering",
-        startDate: "Jan 2018",
-        endDate: "Nov 2024",
-        employmentType: "Internship",
+        degree: "Course",
+        field: "Software Engineering",
+        startDate: "Sep 2023",
+        endDate: "Jul 2024",
         location: "Zaria, Nigeria",
-        skills: [" Machine Learning", "Embedded Systems", "Networking", " Software Development", "Electrical Engineering", "Control Systems Design"]
+        skills: ["C programming language", "Shell Scripting", "Python programming language", "Data structures & algorithms", "Github"]
     },
 ]
