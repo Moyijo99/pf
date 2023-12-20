@@ -7,10 +7,12 @@ import CTA from "./components/CTA"
 import ProffesionalStatement from "./components/ProffessionalStatement"
 import Experience from "./components/Experience"
 import Education from "./components/Education"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function Home() {
   return (
     <>
+        <SpeedInsights />
         <Hero />
         <ProffesionalStatement />
         <Experience />
