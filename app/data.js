@@ -132,7 +132,7 @@ export const experience = [
     },
     {
         title: "Intern",
-        company: "NNPC",
+        company: "Nigerian National Petroleum Corporation Limited - NNPC",
         logo: nnpcLogo,
         employmentType: "Internship",
         startDate: "Jun 2023",
