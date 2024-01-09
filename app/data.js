@@ -9,6 +9,7 @@ import alxLogo from "./assets/alx-logo.svg"
 import abuLogo from "./assets/ABU-logo.png"
 import nnpcLogo from "./assets/NNPC-logo.svg"
 import platrLogo from "./assets/Platr-logo.svg"
+import FyxnLogo from "./assets/fyxn_logo.jpg"
 
 export const skills = [
     {
@@ -109,6 +110,16 @@ export const projects = [
 ];
 
 export const experience = [
+    {
+        title: "Front-end Developer",
+        company: "FYXN",
+        logo: FyxnLogo,
+        employmentType: "Contract",
+        startDate: "Dec 2023",
+        endDate: "Present",
+        location: "Remote",
+        techs: ["Software Development", "Front-End Web Development", "User Experience", "Responsiveness", "Next.js", "Git", "Figma", "TypeScript", "MongoDB", "Express", "Figma", "Problem Solving", "Tailwind CSS", "SCSS", "Angular", "HTML", "TyprScript"],
+    },
     {
         title: "Full-Stack Developer",
         company: "PLATR",
