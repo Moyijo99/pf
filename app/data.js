@@ -119,6 +119,14 @@ export const experience = [
         endDate: "Present",
         location: "Remote",
         techs: ["Software Development", "Front-End Web Development", "User Experience", "Responsiveness", "Next.js", "Git", "Figma", "TypeScript", "MongoDB", "Express", "Figma", "Problem Solving", "Tailwind CSS", "SCSS", "Angular", "HTML", "TyprScript"],
+        extra: {
+            title: "Full-Stack Engineer",
+            employmentType: "Part-time",
+            startDate: "Dec 2023",
+            endDate: "Present",
+            location: "Remote",
+            techs: ["Selenium Webdriver"],
+        }
     },
     {
         title: "Full-Stack Developer",
