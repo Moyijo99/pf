@@ -20,7 +20,7 @@ const Hero = () => {
             <div className={ HeroStyles.text }>
                 <div className={ HeroStyles.heroTitle }>
                     <span className={ HeroStyles.little }>Hi there, My Name is Muhammad Moyijo</span>
-                    <h1 className={ HeroStyles.mainText }>I'm a Data Analyst, Uncovering Insights from Raw Data</h1>
+                    <h1 className={ HeroStyles.mainText }>A Data Analyst, Uncovering Insights from Raw Data</h1>
                 </div>
             </div>
             <div className={ HeroStyles.btnCont }>
