@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/IMG_2733.jpg'
+import logo from '../assets/logo.svg'
 // import resume from "../assets/"
 import { BsFillArrowRightCircleFill } from "react-icons/bs"
 import Link from "next/link";
