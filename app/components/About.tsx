@@ -10,13 +10,14 @@ const About = () => {
             </div>
             <div className={AboutStyles.text}>
                 <h2 className="title"><span className="line"></span>About Me</h2>
-                <h1>In the Pixels and Beyond 🚀.</h1>
-                <p>I began my coding journey during the challenging times of the COVID-19 pandemic. Starting with Python, I gradually ventured into web development, initially exploring Flask. However, I soon realized the significance of frontend skills and took on the challenge of mastering HTML, CSS, and JavaScript. To refine my abilities, I immersed myself in challenging projects on Frontend Mentor.</p>
-                <p>In 2022, fate took an unexpected turn when a friend (Hassino) offered me an opportunity in the realm of UI/UX design. Despite having no prior experience in this domain, I enthusiastically accepted the offer and quickly adapted to the role. Known for my ability to learn fast, I completed the design work after six months of dedicated effort.</p>
-                <p>I transitioned to the development team, learning on the job and picking up technologies like Angular. Today, I&apos;m a mid-level software developer. Beyond web development, I&apos;m venturing into game development with Unreal Engine 5 and exploring machine learning with a friend.</p>
+                <h1>My Journey with data.</h1>
+                <p>After attending a summer coding school as a child, I knew coding was my passion. However, my coding journey truly began in 2021 during isolation from COVID-19, when I learned the fundamentals of Python.</p>
+                <p>I stagnated for a while, unable to find an aspect of programming that excited me. That changed in 2022 when I discovered data analysis, which perfectly combined my love for statistics and analysis. I gathered resources online and started learning.</p>
+                <p>Today, I am an intern in the data field, eager for more experiences and opportunities to learn, with plans to venture into machine learning in the near future.</p>
             </div>
         </section>
     )
 }
 
 export default About
+

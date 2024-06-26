@@ -12,7 +12,7 @@ const Footer = () => {
                 <Link href="/">
                     <Image src={logo} alt="logo" className={FooterStyles.logo} />
                 </Link>
-                <span className={FooterStyles.copyright}>&copy; ADM DEVS {year}</span>
+                <span className={FooterStyles.copyright}>&copy; M TECH SOLUTIONS {year}</span>
             </div>
         </footer>
     );

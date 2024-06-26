@@ -1,8 +1,12 @@
 import { FaHtml5, FaSass, FaPython, FaAngular, FaReact, FaFigma, FaNodeJs, FaGithub } from "react-icons/fa"
-import { SiTypescript, SiExpress, SiTailwindcss, SiFlask, SiJira, SiSvelte, SiMongodb, SiHeroku, SiVercel } from "react-icons/si"
+import { RiFileExcel2Line } from "react-icons/ri";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiGooglesheets, SiJupyter, SiNumpy, SiTableau, SiPandas, SiTypescript, SiExpress, SiTailwindcss, SiFlask, SiJira, SiSvelte, SiMongodb, SiHeroku, SiVercel } from "react-icons/si"
 import { DiGit } from "react-icons/di"
 import WebTechsStyles from "../styles/WebTechs.module.scss"
-
+import Image from 'next/image';
+import seabornicon from '../assets/logos--seaborn-icon.svg'
+import matploticon from '../assets/devicon-plain--matplotlib-wordmark.svg'
 
 const WebTechs = () => {
   return (
@@ -13,52 +17,16 @@ const WebTechs = () => {
         </>
         <div className={ WebTechsStyles.webTechsGrid }>
             <div>
-                <FaHtml5 className={ WebTechsStyles.webTech } />
-                <p>Html</p>
+                <BiLogoPostgresql className={ WebTechsStyles.webTech } />
+                <p>PostgreSQL</p>
             </div>
             <div>
-                <FaSass className={ WebTechsStyles.webTech } />
-                <p>Sass</p>
+                <SiPandas className={ WebTechsStyles.webTech } />
+                <p>Pandas</p>
             </div>
             <div>
                 <FaPython className={ WebTechsStyles.webTech } />
                 <p>Python</p>
-            </div>
-            <div>
-                <FaAngular className={ WebTechsStyles.webTech } />
-                <p>Angular</p>
-            </div>
-            <div>
-                <FaReact className={ WebTechsStyles.webTech } />
-                <p>React</p>
-            </div>
-            <div>
-                <FaFigma className={ WebTechsStyles.webTech } />
-                <p>Figma</p>
-            </div>
-            <div>
-                <SiTypescript className={ WebTechsStyles.webTech } />
-                <p>TypeScript</p>
-            </div>
-            <div>
-                <FaNodeJs className={ WebTechsStyles.webTech } />
-                <p>NodeJs</p>
-            </div>
-            <div>
-                <SiTailwindcss className={ WebTechsStyles.webTech } />
-                <p>Tailwind</p>
-            </div>
-            <div>
-                <SiJira className={ WebTechsStyles.webTech } />
-                <p>Jira</p>
-            </div>
-            <div>
-                <SiSvelte className={ WebTechsStyles.webTech } />
-                <p>Svelte</p>
-            </div>
-            <div>
-                <SiFlask className={ WebTechsStyles.webTech } />
-                <p>Flask</p>
             </div>
             <div>
                 <DiGit className={ WebTechsStyles.webTech } />
@@ -69,20 +37,36 @@ const WebTechs = () => {
                 <p>GitHub</p>
             </div>
             <div>
-                <SiExpress className={ WebTechsStyles.webTech } />
-                <p>Express</p>
-            </div>
-            <div>
-                <SiMongodb className={ WebTechsStyles.webTech } />
-                <p>MongoDB</p>
-            </div>
-            <div>
                 <SiVercel className={ WebTechsStyles.webTech } />
                 <p>Vercel</p>
             </div>
             <div>
-                <SiHeroku className={ WebTechsStyles.webTech } />
-                <p>Heroku</p>
+                <RiFileExcel2Line className={ WebTechsStyles.webTech } />
+                <p>Excel</p>
+            </div>
+            <div>
+                <SiTableau className={ WebTechsStyles.webTech } />
+                <p>Tableau</p>
+            </div>
+            <div>
+                <SiNumpy className={ WebTechsStyles.webTech } />
+                <p>Numpy</p>
+            </div>
+            <div>
+                <Image src={seabornicon} className={ WebTechsStyles.webTech } alt="profile-image" />
+                <p>Seaborn</p>
+            </div>
+            <div>
+                <Image src={matploticon} className={ WebTechsStyles.webTech } alt="profile-image" />
+                <p>Matplotlib</p>
+            </div>
+            <div>
+                <SiGooglesheets className={ WebTechsStyles.webTech } />
+                <p>Google Sheets</p>
+            </div>
+            <div>
+                <SiJupyter className={ WebTechsStyles.webTech } />
+                <p>Jupyter</p>
             </div>
         </div>
     </section>
