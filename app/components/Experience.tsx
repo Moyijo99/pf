@@ -13,6 +13,9 @@ const Experience = () => {
                         return (
                             <article key={ i } className={ ExperienceStyles.experience }>
                                     <div className={ ExperienceStyles.infoCont }>
+                                    <div className={ ExperienceStyles.logoXline }>
+                                            <Image src={ singleExperience.logo } className={ ExperienceStyles.logo } alt="company-image" />
+                                        </div>
                                         <div className={ ExperienceStyles.detailsWrapper }>
                                             <div className={ ExperienceStyles.details }>
                                                 <div>
