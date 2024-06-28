@@ -13,14 +13,6 @@ const Experience = () => {
                         return (
                             <article key={ i } className={ ExperienceStyles.experience }>
                                     <div className={ ExperienceStyles.infoCont }>
-                                        <div className={ ExperienceStyles.logoXline }>
-                                            <Image src={ singleExperience.logo } className={ ExperienceStyles.logo } alt="company-image" />
-                                            {
-                                                singleExperience.extra ? (
-                                                    <span className={ ExperienceStyles.line }></span>            
-                                                ) : null
-                                            }
-                                        </div>
                                         <div className={ ExperienceStyles.detailsWrapper }>
                                             <div className={ ExperienceStyles.details }>
                                                 <div>
@@ -29,9 +21,6 @@ const Experience = () => {
                                                     <p className={ ExperienceStyles.grey }>{ singleExperience.startDate } - { singleExperience.endDate }</p>
                                                     <p className={ ExperienceStyles.grey }>{ singleExperience.location }</p>
                                                 </div>
-                                                { singleExperience.linkToProject ? (
-                                                        <a href={ singleExperience.linkToProject } target="_blank">Live Link</a>
-                                                    ) : null }
                                             </div>
                                             <p className={ ExperienceStyles.description }>{ singleExperience.Description }</p>
                                             <div className={ ExperienceStyles.techs }>
@@ -47,39 +36,7 @@ const Experience = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    {
-                                        singleExperience.extra ? (
-                                            <div className={ ExperienceStyles.infoCont }>
-                                                <div className={ `${ExperienceStyles.logoXline} ${ExperienceStyles.extraCont}` }>
-                                                    <span className={ `${ExperienceStyles.line} ${ExperienceStyles.extraLine}` }></span>
-                                                    <span className={ ExperienceStyles.circle }></span>
-                                                </div>
-                                                <div className={ `${ExperienceStyles.detailsWrapper} pt-10` }>
-                                                    <div className={ ExperienceStyles.details }>
-                                                        <div>
-                                                            <h4 className={ ExperienceStyles.title }>{ singleExperience.extra.title }</h4>
-                                                            <p>{ singleExperience.extra.employmentType }</p>
-                                                            <p className={ ExperienceStyles.grey }>{ singleExperience.extra.startDate } - { singleExperience.extra.endDate }</p>
-                                                            <p className={ ExperienceStyles.grey }>{ singleExperience.extra.location }</p>
-                                                        </div>
-                                                    </div>
-                                                    <p className={ ExperienceStyles.description }>{ singleExperience.extra.Description }</p>
-                                                    <div className={ ExperienceStyles.techs }>
-                                                        {
-                                                            singleExperience.extra.techs.map((tech, i) => {
-                                                                return (
-                                                                    <div key={i}>
-                                                                        <p className={ ExperienceStyles.tech }>{ tech }</p>
-                                                                    </div>
-                                                                )
-                                                            })
-                                                        }
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        ) : null
-                                    }
-                            </article>
+                                 </article>
                         )
                     })
                 }
