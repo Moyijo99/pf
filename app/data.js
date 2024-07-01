@@ -15,15 +15,6 @@ export const skills = [
 
 export const projects = [
     {
-        tag: "SQL",
-        title: "Transaction Analysis Using SQL",
-        text: "This case study is all about calculating metrics, growth and helping Data Bank; a FinTech startup analyse their data in a smart way to better forecast and plan for their future developments.",
-        image: project1Image,
-        techs: ["PostgreSQL", "Github"],
-        codeLink: "https://github.com/Moyijo99/SQL-Challenge-Case-Study-4---Data-Bank/tree/main",
-        articleLink: "https://medium.com/@moyeedjo/8-week-sql-challenge-4-data-bank-f0179aeea7dc"
-    },
-    {
         tag: "Python",
         title: "911 Calls Analysis Using Python",
         text: "For this project we analyzed some 911 call data from Kaggle using python.",
@@ -31,6 +22,24 @@ export const projects = [
         techs: ["Python", "TypeScript", "Seaborn", "Pandas", "Numpy", "Matplotlib", "Github"],
         codeLink: "https://github.com/Moyijo99/911-Calls-Analysis-Python.git",
         articleLink: "https://medium.com/@moyeedjo/911-calls-capstone-project-a533d12b784c"
+    },
+    {
+        tag: "Python",
+        title: "Website Performance Analysis using Python",
+        text: "In this article, we conducted a comprehensive analysis of the website performance using python",
+        image: project1Image,
+        techs: ["Python", "TypeScript", "Pandas", "Numpy", "Matplotlib", "Github"],
+        codeLink: "https://github.com/Moyijo99/Website-performance-analysis-.git",
+        articleLink: "https://medium.chttps://medium.com/@moyeedjo/website-performance-analysis-using-python-e61b3ddc5696"
+    },
+    {
+        tag: "SQL",
+        title: "Transaction Analysis Using SQL",
+        text: "This case study is all about calculating metrics, growth and helping Data Bank; a FinTech startup analyse their data in a smart way to better forecast and plan for their future developments.",
+        image: project1Image,
+        techs: ["PostgreSQL", "Github"],
+        codeLink: "https://github.com/Moyijo99/SQL-Challenge-Case-Study-4---Data-Bank/tree/main",
+        articleLink: "https://medium.com/@moyeedjo/8-week-sql-challenge-4-data-bank-f0179aeea7dc"
     }
 ];
 
