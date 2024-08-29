@@ -12,10 +12,10 @@ const ProffesionalStatement = () => {
     return (
         <section className={`${PSStyles.Ps} container`}>
             <h2 className="title"><span className="line"></span>Professional Statement</h2>
-            <h1 className={ PSStyles.subTitle }>Data Analyst</h1>
-            <p>I&apos;m Muhammad Moyijo Bala, a dedicated data analyst, I specialize in extracting actionable insights from complex datasets to drive informed business decisions. With a keen eye for detail and a passion for problem-solving and learning, I excel in uncovering trends, identifying opportunities, and optimizing processes.</p>
-            <p>Leveraging advanced analytical techniques and cutting-edge tools, I am committed to delivering valuable solutions that positively impact organizational performance. I&apos;m very big on team work and collaboration, and through clear communication, I aim to empower teams with data-driven strategies that drive growth and innovation.</p>
-            <p>My portfolio showcases a diverse range of projects, highlighting my proficiency in data analysis, visualization, and interpretation. Whether it&apos;s identifying key metrics, building predictive models, or developing interactive dashboards, I thrive on transforming raw data into meaningful insights.</p>
+            <h1 className={ PSStyles.subTitle }>Data Scientist</h1>
+            <p>I&apos;m Muhammad Moyijo Bala, a passionate data scientist focused on turning complex data into actionable insights that drive innovation and strategic decision-making. With a strong foundation in statistical analysis, machine learning, and data modeling, I excel at uncovering patterns, predicting outcomes, and solving intricate business challenges.</p>
+            <p>I specialize in developing robust algorithms and leveraging cutting-edge technologies to deliver data-driven solutions that enhance organizational performance. My approach is deeply collaborative, and I believe in the power of teamwork and clear communication to transform raw data into impactful strategies that foster growth and efficiency.</p>
+            <p>My portfolio showcases a diverse range of projects, emphasizing my expertise in data science, machine learning, and predictive analytics. Whether it&apos;s designing sophisticated models, optimizing processes through automation, or building interactive tools for data exploration, I am committed to creating value through innovation.</p>
             <p>Let&apos;s connect to explore how I can contribute to your data-driven success.</p>
         </section>
     )

@@ -12,8 +12,8 @@ const WebTechs = () => {
   return (
     <section className={`${WebTechsStyles.webTechs} container`}>
         <>
-            <h2 className="title"><span className="line"></span>Web technologies</h2>
-            <p>Passionate full-stack developer & UI/UX designer, dedicated to creating seamless web experiences through frontend and backend expertise.</p>
+            <h2 className="title"><span className="line"></span>Tools</h2>
+            <p></p>
         </>
         <div className={ WebTechsStyles.webTechsGrid }>
             <div>
