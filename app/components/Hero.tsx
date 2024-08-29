@@ -20,7 +20,7 @@ const Hero = () => {
             <div className={ HeroStyles.text }>
                 <div className={ HeroStyles.heroTitle }>
                     <span className={ HeroStyles.little }>Hi there, My Name is Muhammad Moyijo</span>
-                    <h1 className={ HeroStyles.mainText }>A Data Analyst, Uncovering Insights from Raw Data</h1>
+                    <h1 className={ HeroStyles.mainText }>A Data Scientist, Transforming Data into Predictive Power</h1>
                 </div>
             </div>
             <div className={ HeroStyles.btnCont }>
@@ -37,8 +37,8 @@ const Hero = () => {
                 <a className={ HeroStyles.socialLink } target="_blank" href="https://wa.me/message/KSLAK2HKVYBGK1" rel="noreferrer"><FaWhatsapp className={HeroStyles.icon} /></a>
             </div>
             <div className={ HeroStyles.bg }>
-                <span>Data Analysis</span>
                 <span>Data Science</span>
+                <span>Machine Learning</span>
             </div>
         </div>
         <div className={ HeroStyles.arrow }>
